@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://test-site-sigma-two.vercel.app/sitemap.xml
+Sitemap: https://bohdan-tsekhmeistruk.github.io/portfolio/sitemap.xml
