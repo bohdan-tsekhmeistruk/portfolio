@@ -205,6 +205,53 @@ section { padding: 5rem 2.5rem; position: relative; z-index: 1; }
   font-weight: 700; color: var(--fg);
 }
 
+/* ─── TECH STACK MARQUEE ─── */
+.tech-marquee-section {
+  padding: 2rem 0 1rem;
+  position: relative; z-index: 1;
+  text-align: center;
+}
+.tech-marquee-label {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.72rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--fg-muted); margin-bottom: 1rem;
+}
+.tech-marquee {
+  overflow: hidden; width: 100%;
+  mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+.tech-marquee-track {
+  display: flex; gap: 0.7rem;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.tech-pill {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.8rem; font-weight: 500;
+  color: var(--fg);
+  background: var(--glass);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  transition: all var(--transition);
+  cursor: default;
+}
+.tech-pill:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  box-shadow: 0 2px 12px rgba(30,64,175,0.3);
+}
+
 /* ─── STATS ─── */
 .stats-row {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem;
