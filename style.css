@@ -211,6 +211,9 @@ section { padding: 5rem 2.5rem; position: relative; z-index: 1; }
   position: relative; z-index: 1;
   text-align: center;
 }
+.hero-marquee .tech-marquee-section {
+  padding: 0 0 1rem;
+}
 .tech-marquee-label {
   font-family: 'Space Grotesk', monospace;
   font-size: 0.72rem; font-weight: 600;
@@ -233,7 +236,7 @@ section { padding: 5rem 2.5rem; position: relative; z-index: 1; }
 }
 .tech-pill {
   display: inline-flex; align-items: center; gap: 0.4rem;
-  padding: 0.4rem 1rem;
+  padding: 0.45rem 1rem;
   border-radius: 50px;
   font-family: 'Space Grotesk', monospace;
   font-size: 0.8rem; font-weight: 500;
