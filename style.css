@@ -58,9 +58,13 @@ body {
 
 /* ─── HEADER ─── */
 .header {
-  position: absolute; top: 0; width: 100%; z-index: 100;
+  position: sticky; top: 0; width: 100%; z-index: 100;
   padding: 1.2rem 2.5rem;
   display: flex; align-items: center; justify-content: flex-end;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 }
 .logo {
   font-family: 'Space Grotesk', sans-serif;
